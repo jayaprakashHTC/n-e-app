@@ -1,3 +1,6 @@
 # Node modules (dependencies)
 node_modules/
 
+# Dependency Lock files (optional, unless tracking lock files)
+package-lock.json
+yarn.lock
