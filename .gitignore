@@ -4,6 +4,10 @@ node_modules/
 # Ignore .env file (sensitive data)
 .env
 
+# Dependency Lock files (optional, unless tracking lock files)
+package-lock.json
+yarn.lock
+
 # Ignore development-specific files
 .vscode/
 .idea/
