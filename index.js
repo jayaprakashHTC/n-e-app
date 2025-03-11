@@ -4,21 +4,21 @@ const express = require('express');
 
 const app = express();
 
-app.use((req, res)=>{
- res.send("Running Successfully done Dashboard application");
-});
 
+// Parse JSON request bodies
+app.use(express.json());
 
+// Parse URL-encoded request bodies
+app.use(express.urlencoded({ extended: true }));
 
-
-
-
-
-
+const regsiterFormData = require('./src/routes/regsiter_routes');
 
 const PORT = process.env.PORT || 8008
 
-console.log("port number", process.env.PORT);
+
+app.use('/dashboard', regsiterFormData);
+
+
 
 app.listen(PORT, ()=>{
   console.log(`Server Running Successfully`)

@@ -1,6 +1,27 @@
-# Node modules (dependencies)
+# Ignore node_modules directory
 node_modules/
 
-# Dependency Lock files (optional, unless tracking lock files)
-package-lock.json
-yarn.lock
+# Ignore .env file (sensitive data)
+.env
+
+# Ignore development-specific files
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore test files
+*.spec.js
+*.test.js
+
+# Ignore build output (if built locally)
+dist/
+build/
+
+# Ignore development configuration files
+.eslintrc
+.prettierrc
